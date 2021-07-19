@@ -9,15 +9,27 @@ import ReactDOM from "react-dom";
     </div>
   }
 // eslint-disable-next-line
-  const RandomNUm=()=>{
+  const RandomNum=()=>{
     const num = Math.random()*10
     return <div>
       <h1>Your number is: {num}</h1>
       <h2>{num >5? "BIG":"small1!"} number</h2>
 
     </div>}
+
+const App=()=>{
+    return (
+        <div>
+          <RandomNum></RandomNum>
+          <RandomNum></RandomNum>
+          <Dog></Dog>
+        </div>
+    )
+}
 ReactDOM.render(
-      <RandomNUm />,
+      <App />,
     document.getElementById('root')
 );
-export default Dog;
+
+
+export default App;
