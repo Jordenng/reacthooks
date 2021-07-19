@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from "react-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  const Dog=()=>{
+    return <div>
+      <h1>I Am A DOG</h1> <h2>Noof hoof</h2>
     </div>
-  );
-}
+  }
+// eslint-disable-next-line
+  const RandomNUm=()=>{
+    const num = Math.random()*10
+    return <div>
+      <h1>Your number is: {num}</h1>
+      <h2>{num >5? "BIG":"small"} number</h2>
 
-export default App;
+    </div>}
+ReactDOM.render(
+      <RandomNUm />,
+    document.getElementById('root')
+);
+export default Dog;
