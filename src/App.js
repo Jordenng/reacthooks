@@ -13,7 +13,7 @@ import ReactDOM from "react-dom";
     const num = Math.random()*10
     return <div>
       <h1>Your number is: {num}</h1>
-      <h2>{num >5? "BIG":"small1"} number</h2>
+      <h2>{num >5? "BIG":"small1!"} number</h2>
 
     </div>}
 ReactDOM.render(
